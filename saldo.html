@@ -1,0 +1,19 @@
+<meta charset="utf-8">
+<h1>Saldo Bancário</h1>
+<script>
+
+    var saldo = parseFloat(prompt('Saldo:').replace(',', '.'))
+    var credito = parseFloat(prompt('Crédito:').replace(',', '.'))
+    var debitos = parseFloat(prompt('Déditos:').replace(',', '.'))
+    var saldoAtualizado = saldo - debitos + credito 
+    document.write("Saldo atualizado: " + saldoAtualizado.toFixed(2).replace('.', ','))
+    document.write('<br>')
+
+    if (saldoAtualizado < 0) {
+        document.write('Status: SALDO NEGATIVO')
+    }
+    else {
+        document.write('Status: SALDO POSITIVO')
+    }
+
+</script>

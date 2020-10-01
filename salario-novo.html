@@ -1,0 +1,11 @@
+<meta charset="utf-8">
+<h1>Salário Novo</h1>
+
+<script>
+
+    var salario = parseFloat(prompt('Informe seu salário atual: R$').replace(",", "."))
+    var bonus = parseFloat(prompt("Informe o valor do bônus:").replace(",", "."))
+    var salarioNovo = salario + bonus
+    document.write("Seu salário novo é: R$ " + salarioNovo.toFixed(2).replace(".", ","))
+
+</script>
